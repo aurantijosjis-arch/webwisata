@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-canvas: #f9f8f3;
+  --color-surface-botanical: #effdf0;
+  --color-surface-low: #e9f7ea;
+  --color-surface-container: #e3f2e5;
+  --color-surface-high: #deecdf;
+  --color-primary: #1e4b38;
+  --color-primary-deep: #023423;
+  --color-secondary: #4e9f3d;
+  --color-secondary-strong: #1a6d0e;
+  --color-tertiary: #d97736;
+  --color-tertiary-deep: #753400;
+  --color-slate-ink: #1c2820;
+  --color-slate-muted: #414944;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1fb858;
+}
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    background-color: #f9f8f3;
+    color: #1c2820;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f9f8f3;
+    color: #1c2820;
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+.highland-shadow {
+  box-shadow: 0 8px 24px -4px rgba(28, 40, 32, 0.08), 0 2px 6px -1px rgba(28, 40, 32, 0.04);
+}
+
+.organic-border {
+  border: 1px solid rgba(30, 75, 56, 0.08);
+}
+
+.hairline-divider {
+  border-color: rgba(30, 75, 56, 0.08);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

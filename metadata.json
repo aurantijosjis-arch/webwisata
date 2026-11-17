@@ -1,0 +1,6 @@
+{
+  "name": "Lereng Asri",
+  "description": "Highland eco-tourism village guide for family homestays, guided agro-tours, seasonal harvests, and trail reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
